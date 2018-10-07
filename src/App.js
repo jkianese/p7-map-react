@@ -1,28 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+// import axios from 'axios';
+import DisMap from './components/DisMap'
+// import FourSquare from './api/FourSquare'
 
-class App extends Component {
-  render() {
+class App extends Component { 
+  
+  render () {
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <main>
+        <div id="map">
+        {/*<h1 className="heading"> Our Favorite Rides and Restaurants at Magic Kingdom, Disney World </h1>*/}
+         <DisMap  />
       </div>
+      </main>
     );
   }
 }
-
-export default App;
+export default App
