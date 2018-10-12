@@ -86,8 +86,8 @@ class DisMap extends Component {
 getVenues = () => {
     const endPoint = "https://api.foursquare.com/v2/venues/explore?"
     const parameters = {
-      client_id: "F1BIU3KU3RZFBQKCLKJ2MX1AT2ZRZFYRUXTJUMFGA1YUS5ZF",
-      client_secret: "N1HLP0MSWYJJATAS3CBQTTSZ2WLME5RB2TAUWHGE2UXZ5A1E",
+      client_id: "",
+      client_secret: "",
       query: "food",
       ll: "28.417729,  -81.581212",
       v: "20181007"
@@ -117,7 +117,7 @@ getVenues = () => {
 function scriptSrc() {
     let index = window.document.getElementsByTagName("script")[0]
     let script = window.document.createElement("script")
-    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBj5AzHYC1kUPRnvaT6G6zsAONHSpKmoqQ&callback=initMap'
+    script.src = 'https://maps.googleapis.com/maps/api/js?key=&callback=initMap'
     script.async = true
     script.defer = true
     script.onerror = function() {
